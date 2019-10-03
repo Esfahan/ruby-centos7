@@ -2,6 +2,7 @@ From centos:7
 
 ARG RUBY_VER_PREFIX=2.5
 ARG RUBY_VER=2.5.1
+ARF BUNDLER_VER=1.15.0
 
 RUN yum install -y make \
                    gcc-c++ \
@@ -33,4 +34,4 @@ WORKDIR /usr/local/src/ruby-${RUBY_VER}
 RUN ./configure
 RUN make
 RUN make install
-RUN gem install bundler -v 1.15.0
+RUN gem install bundler -v ${BUNDLER_VER}
