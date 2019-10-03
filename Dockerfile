@@ -2,7 +2,7 @@ From centos:7
 
 ARG RUBY_VER_PREFIX=2.5
 ARG RUBY_VER=2.5.1
-ARF BUNDLER_VER=1.15.0
+ARG BUNDLER_VER=1.15.0
 
 RUN yum install -y make \
                    gcc-c++ \
